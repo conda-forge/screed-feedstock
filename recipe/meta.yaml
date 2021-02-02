@@ -17,15 +17,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >= 3.7
     - pip
     - setuptools
-    - bz2file
-    - pytest-runner
 
   run:
-    - python
-    - bz2file
+    - python >= 3.7
 
 test:
   imports:
@@ -36,7 +33,7 @@ test:
     - screed --help
 
   requires:
-    - pytest >=3.0
+    - pytest >=6.0
     - pytest-cov
 
 about:
@@ -51,3 +48,4 @@ about:
 extra:
   recipe-maintainers:
     - luizirber
+    - ctb
