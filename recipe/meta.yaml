@@ -1,4 +1,4 @@
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: screed
@@ -6,14 +6,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/screed/screed-{{ version }}.tar.gz
-  sha256: 20197e2460db2d334398321aa58a03e31e82150320b20fdaf55295d0f8ba477f
+  sha256: ad1b894aac81a8ad32fd587d37acb3fb4e575f6d828da73713038cc180098178
 
 build:
   noarch: python
   entry_points:
     - screed = screed.__main__:main
   number: 0
-  script: "{{ PYTHON }} -m pip install --no-deps -vv ."
+  script: {{ PYTHON }} -m pip install --no-deps -vv .
 
 requirements:
   host:
@@ -42,7 +42,7 @@ test:
 about:
   home: http://github.com/dib-lab/screed/
   license: BSD-3-Clause
-  summary: 'Screed is a biological sequence parsing and storage/retrieval library for DNA and protein sequences.'
+  summary: Screed is a biological sequence parsing and storage/retrieval library for DNA and protein sequences.
   license_family: BSD
   license_file: doc/LICENSE.rst
   dev_url: https://github.com/dib-lab/screed
