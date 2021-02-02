@@ -5,11 +5,13 @@ Home: http://github.com/dib-lab/screed/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/screed-feedstock/blob/master/LICENSE.txt)
 
 Summary: Screed is a biological sequence parsing and storage/retrieval library for DNA and protein sequences.
 
+Development: https://github.com/dib-lab/screed
 
+Documentation: https://screed.readthedocs.io/
 
 Current build status
 ====================
