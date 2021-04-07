@@ -12,7 +12,7 @@ build:
   noarch: python
   entry_points:
     - screed = screed.__main__:main
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps -vv .
 
 requirements:
@@ -26,6 +26,7 @@ requirements:
   run:
     - python >=3.7
     - bz2file
+    - setuptools
 
 test:
   imports:
