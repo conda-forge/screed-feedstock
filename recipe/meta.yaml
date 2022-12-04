@@ -1,4 +1,4 @@
-{% set version = "1.0.5" %}
+{% set version = "1.1" %}
 
 package:
   name: screed
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/screed/screed-{{ version }}.tar.gz
-  sha256: ad1b894aac81a8ad32fd587d37acb3fb4e575f6d828da73713038cc180098178
+  sha256: 4c3c45e8078f30563b6ab78027dffef874ab1207625a3eeb55ff13a2826d8426
 
 build:
   noarch: python
   entry_points:
     - screed = screed.__main__:main
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps -vv .
 
 requirements:
