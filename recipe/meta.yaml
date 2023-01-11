@@ -25,7 +25,6 @@ requirements:
 
   run:
     - python >=3.7
-    - bz2file
     - setuptools
 
 test:
