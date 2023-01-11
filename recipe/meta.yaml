@@ -1,4 +1,4 @@
-{% set version = "1.1" %}
+{% set version = "1.1.1" %}
 
 package:
   name: screed
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/screed/screed-{{ version }}.tar.gz
-  sha256: 4c3c45e8078f30563b6ab78027dffef874ab1207625a3eeb55ff13a2826d8426
+  sha256: 101e1934898d2d4a14f9d9c97774b8c13c90a66b8d2b734bb5a90fb0ed6209b5
 
 build:
   noarch: python
@@ -25,7 +25,6 @@ requirements:
 
   run:
     - python >=3.7
-    - bz2file
     - setuptools
 
 test:
